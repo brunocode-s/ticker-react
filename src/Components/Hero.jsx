@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
@@ -24,19 +27,20 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="/auth/signup"
+        <Link
+            to="/auth/signup"
             className="group relative bg-white text-blue-600 text-lg px-8 py-4 rounded-xl shadow-2xl font-bold hover:shadow-white/20 hover:scale-105 transition-all duration-300 overflow-hidden"
           >
             <span className="relative z-10">Get Started Free</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </a>
-          <a
-            href="/auth/login"
+          </Link>
+
+          <Link
+            to="/auth/login"
             className="border-2 border-white text-white text-lg px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-600 hover:border-white transition-all duration-300 hover:scale-105"
           >
             Login
-          </a>
+          </Link>
         </div>
       </div>
       <svg

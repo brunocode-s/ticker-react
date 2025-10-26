@@ -42,6 +42,14 @@ export default function Landing() {
       <main className="flex-1">
         <Hero />
         <section className="bg-white py-20 px-6">
+          <div className="max-w-7xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
+              Why Choose Ticket Easy?
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Powerful, intuitive, and built to help your team stay productive and focused.
+            </p>
+          </div>
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
               {features.map((feature, i) => (
